@@ -1,0 +1,17 @@
+﻿
+@*@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}*@
+
+@model   IEnumerable<Person>
+<h2>List</h2>
+
+@foreach (var p in Model) {
+<div>
+    <h3> @p.PersonID</h3>
+    <div>@p.FirstName</div>
+    <div>@p.MiddleName</div>
+    <div>@p.LastName</div>
+</div>
+}
