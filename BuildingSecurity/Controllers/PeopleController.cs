@@ -16,8 +16,10 @@ namespace BuildingSecurity.Controllers
             this.repository = repo;
         }
 
+
+
         public ViewResult List() => View(repository.People);
 
-
+        public string ImportResidents (string s) => s = "Sorbeto";
     }
 }

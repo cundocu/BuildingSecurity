@@ -7,6 +7,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="NonFactors.Grid.Mvc6" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mvc.Grid.Core">
+      <HintPath>..\..\..\Users\kundito\.nuget\packages\nonfactors.grid.core.mvc6\3.1.0\lib\net46\Mvc.Grid.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

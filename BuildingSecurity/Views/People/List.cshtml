@@ -1,17 +1,69 @@
-﻿
-@*@{
+﻿@{
     ViewData["Title"] = "List";
     Layout = "~/Views/Shared/_Layout.cshtml";
-}*@
+}
 
-@model   IEnumerable<Person>
+@model IEnumerable<Person>
 <h2>List</h2>
 
-@foreach (var p in Model) {
-<div>
-    <h3> @p.PersonID</h3>
-    <div>@p.FirstName</div>
-    <div>@p.MiddleName</div>
-    <div>@p.LastName</div>
-</div>
-}
+<table class="table">
+
+    <thead>
+        <tr>
+            <th scope="col"> ID</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td class=""> @Html.DisplayFor( modelitem => @p.PersonID ) </td>
+                <td> @Html.DisplayFor(modelitem => @p.FirstName)</td>
+                <td> @Html.DisplayFor(modelitem => @p.MiddleName)</td>
+                <td> @Html.DisplayFor(modelitem =>  @p.LastName)</td>
+            </tr>
+        }
+    </tbody>
+
+
+
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>dd</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>dfat</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>dtwitter</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
