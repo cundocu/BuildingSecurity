@@ -31,3 +31,4 @@ C:\Projects\BuildingSecurity\BuildingSecurity\obj\Debug\netcoreapp2.1\BuildingSe
 C:\Projects\BuildingSecurity\BuildingSecurity\obj\Debug\netcoreapp2.1\BuildingSecurity.pdb
 C:\Projects\BuildingSecurity\BuildingSecurity\obj\Debug\netcoreapp2.1\BuildingSecurity.csproj.CopyComplete
 C:\Projects\BuildingSecurity\BuildingSecurity\obj\Debug\netcoreapp2.1\Razor\Views\People\List.g.cshtml.cs
+C:\Projects\BuildingSecurity\BuildingSecurity\obj\Debug\netcoreapp2.1\Razor\Views\Duty\SearchResidents.g.cshtml.cs
