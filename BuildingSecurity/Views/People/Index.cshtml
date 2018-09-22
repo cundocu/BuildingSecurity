@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Person>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<h2>List</h2>
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <th scope="col"> ID</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td class=""> @Html.DisplayFor(modelitem => @p.PersonID) </td>
+                <td> @Html.DisplayFor(modelitem => @p.FirstName)</td>
+                <td> @Html.DisplayFor(modelitem => @p.MiddleName)</td>
+                <td> @Html.DisplayFor(modelitem => @p.LastName)</td>
+            </tr>
+        }
+    </tbody>
+
+
+
+</table>
